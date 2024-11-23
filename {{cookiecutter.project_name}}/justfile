@@ -1,0 +1,9 @@
+# print all available recipes
+default:
+  @just --list --justfile {{justfile()}}
+
+@run: 
+  uv run src/main.py
+
+@test:
+  uv run pytest
