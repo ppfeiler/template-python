@@ -2,12 +2,9 @@
 
 [Cookiecutter](https://www.cookiecutter.io/) template for python projects.
 
+![Cookiecutter Logo](docs/cookiecutter-logo.svg)
+
 # How to use
 ```sh
 cookiecutter gh:ppfeiler/python-project-cookie
 ```
-
-# Logos
-
-![Cookiecutter Logo](docs/cookiecutter-logo.svg)
-![Python Logo](docs/python-logo.svg)
