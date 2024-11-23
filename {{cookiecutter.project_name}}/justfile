@@ -1,3 +1,4 @@
+{% raw -%}
 # print all available recipes
 default:
   @just --list --justfile {{justfile()}}
@@ -7,3 +8,5 @@ default:
 
 @test:
   uv run pytest
+
+{% endraw -%}
