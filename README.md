@@ -6,5 +6,5 @@
 
 # How to use
 ```sh
-cookiecutter gh:ppfeiler/python-project-cookie
+uvx cookiecutter gh:ppfeiler/python-project-cookie
 ```
