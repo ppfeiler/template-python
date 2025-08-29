@@ -9,6 +9,7 @@ NEEDED_TOOLS = [
 ]
 
 COMMANDS = [
+    ["uv", "sync"],
     ["git", "init", "-b", "main"],
     ["git", "add", "--all"],
     ["git", "commit", "-m", "feat: initial project setup"],
