@@ -4,5 +4,6 @@
   "app_name_hyphenated": "{{ '-'.join(cookiecutter['app_name'].lower().split()).replace('_', '-') }}",
   "app_name_underscored": "{{ cookiecutter.app_name_hyphenated.replace('-', '_') }}",
   "github_username": "ppfeiler",
-  "author_name": "Patrick Pfeiler"
+  "author_name": "Patrick Pfeiler",
+  "license": [ "GPL-3.0-only", "Unlicense" ]
 }

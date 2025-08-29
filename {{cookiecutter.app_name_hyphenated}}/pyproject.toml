@@ -4,7 +4,9 @@ version = "0.1"
 description = "{{ cookiecutter.description or "" }}"
 readme = "README.md"
 authors = [{name = "{{ cookiecutter.author_name }}"}]
-license = ""
+{% if cookiecutter.license %}
+license = "{{ cookiecutter.license }}"
+{% endif %}
 requires-python = ">=3.10"
 classifiers = []
 dependencies = [
