@@ -8,7 +8,6 @@ test:
     uv run pytest
 
 check:
-    uv run ty check
     uv run pre-commit run --all-files
 
 install-pre-commit:

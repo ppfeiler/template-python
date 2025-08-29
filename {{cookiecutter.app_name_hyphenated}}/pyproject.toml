@@ -28,7 +28,13 @@ CI = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_
 
 [tool.uv]
 dev-dependencies = [
-    "pre-commit>=4.3.0",
+    "pre-commit",
     "pytest",
-    "ty>=0.0.1a6",
 ]
+
+[tool.ty.rules]
+unresolved-import = "ignore"
+# TODO: Unable to resolve submodules: https://github.com/astral-sh/ty/issues/445
+unresolved-attribute = "ignore"
+# TODO: Unable to work with **kwargs: https://github.com/astral-sh/ty/issues/247
+missing-argument = "ignore"
