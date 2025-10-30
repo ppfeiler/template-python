@@ -7,10 +7,16 @@ authors = [{name = "{{ cookiecutter.author_name }}"}]
 {% if cookiecutter.license -%}
 license = "{{ cookiecutter.license }}"
 {%- endif %}
-requires-python = ">=3.10"
+requires-python = ">=3.14"
 classifiers = []
 dependencies = [
     "python-dotenv>=1.1.1",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit",
+    "pytest",
 ]
 
 [build-system]
@@ -25,12 +31,6 @@ CI = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_
 {% endif %}
 [project.scripts]
 {{ cookiecutter.app_name_hyphenated }} = "{{ cookiecutter.app_name_underscored }}.app:run"
-
-[tool.uv]
-dev-dependencies = [
-    "pre-commit",
-    "pytest",
-]
 
 [tool.ty.rules]
 unresolved-import = "ignore"
